@@ -7,7 +7,7 @@ export class SendgridService {
   private readonly logger = new Logger(SendgridService.name);
 
   constructor(
-    private readonly configService: ConfigService,
+    private readonly configService: ConfigService, // Not working for some reason
     private readonly mailService: MailService,
   ) {
     this.mailService.setApiKey(
